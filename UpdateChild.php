@@ -4,17 +4,17 @@
 require 'ConnectionSettings.php';
 
 //variables submited by user
-$pk_Child = 1;//$_POST["PK_Child"];
-$name = $_POST["name"];
-$surname = $_POST["surname"];
-$score1 = $_POST["score1"];
-$score2 = $_POST["score2"];
-$score3 = $_POST["score3"];
-$score4 = $_POST["score4"];
-$score5 = $_POST["score5"];
-$niveau = $_POST["niveau"];
-$level = $_POST["level"];
-$fK_Character = $_POST["fK_Character"];
+$pk_Child = $_POST["PK_Child"];
+$name = $_POST["Name"];
+$surname = $_POST["Surname"];
+$score1 = $_POST["Score1"];
+$score2 = $_POST["Score2"];
+$score3 = $_POST["Score3"];
+$score4 = $_POST["Score4"];
+$score5 = $_POST["Score5"];
+$niveau = $_POST["Niveau"];
+$level = $_POST["Level"];
+$fK_Character = $_POST["FK_Character"];
 
 
 // Check connection
@@ -23,13 +23,13 @@ if ($conn->connect_error) {
 }
 
 //Query
-$sql = "Update Child SET Name='" . $pk_Child . "' ,
+$sql = "Update Child SET Name='" . $name . "' ,
 Surname='" . $surname . "' ,
 Score1='" . $score1 . "' ,
-Score2='" . $score1 . "' ,
-Score3='" . $score1 . "' ,
-Score4='" . $score1 . "' ,
-Score5='" . $score1 . "' ,
+Score2='" . $score2 . "' ,
+Score3='" . $score3 . "' ,
+Score4='" . $score4 . "' ,
+Score5='" . $score5 . "' ,
 Niveau='" . $niveau . "' ,
 Level='" . $level . "' ,
 FK_Character='" . $fK_Character . "' 

@@ -4,7 +4,7 @@
 require 'ConnectionSettings.php';
 
 //variables submited by user
-$pk_Child = 1;//$_POST["PK_Child"];
+$pk_Child = $_POST["PK_Child"];
 
 // Check connection
 if ($conn->connect_error) {

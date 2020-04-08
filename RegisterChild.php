@@ -32,7 +32,7 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
     echo "Creating a new Child";
 	//Insert the user and passwort into the database
 	$insert = "INSERT INTO Child(Name, Surname, Score1, Score2, Score3, Score4, Score5, Level, Niveau, FK_character, FK_Teacher) 
-	VALUES ('" . $name . "', '" . $surname . "','0', '0', '0', '0', '0', '1', '1', '" . $fk_Character . "', '" . $fk_Teacher . "')";
+	VALUES ('" . $name . "', '" . $surname . "','0-0-0-0-0', '0-0-0-0-0', '0-0-0-0-0', '0-0-0-0-0', '0-0-0-0-0', '1', '1', '" . $fk_Character . "', '" . $fk_Teacher . "')";
 	
 	if ($conn->query($insert) === TRUE) {
 		echo "New record created successfully";
